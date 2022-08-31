@@ -2,7 +2,7 @@ import boto3
 from datetime import datetime, timedelta, date
 import plotly.graph_objs as go
 from plotly.subplots import make_subplots
-
+# AWS Region for the cloudwatch Metrics.
 AWS_REGION = "us-east-1"
 session = boto3.Session(profile_name='Prod-Profile')
 client = session.client('cloudwatch', region_name=AWS_REGION)
