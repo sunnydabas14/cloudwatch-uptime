@@ -2,7 +2,7 @@ import boto3
 from datetime import datetime, timedelta, date
 import plotly.graph_objs as go
 from plotly.subplots import make_subplots
-# AWS Region for the cloudwatch Metrics.
+
 AWS_REGION = "us-east-1"
 session = boto3.Session(profile_name='Prod-Profile')
 client = session.client('cloudwatch', region_name=AWS_REGION)
@@ -86,4 +86,7 @@ for i,j in zip(graph,range(0,len(graph))):
         fig.append_trace(i, row=2, col=j - int(len(graph)/2) + 1)
 
 fig.show()
-# This shows the graph by plotting all the percentage values.
+# AWS Region for the cloudwatch Metrics.
+# AWS Region for the cloudwatch Metrics.
+# AWS Region for the cloudwatch Metrics.
+# AWS Region for the cloudwatch Metrics.
