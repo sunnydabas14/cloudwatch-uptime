@@ -86,3 +86,4 @@ for i,j in zip(graph,range(0,len(graph))):
         fig.append_trace(i, row=2, col=j - int(len(graph)/2) + 1)
 
 fig.show()
+# This shows the graph by plotting all the percentage values.
